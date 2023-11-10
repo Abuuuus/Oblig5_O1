@@ -7,7 +7,6 @@ namespace Oblig5_O1
         Random rnd = new Random();
         double Saldo = 0;
         double beløp = 0;
-        bool SettInn = false;
         Banken bankhandlinger = new Banken();
 
         public Form1()
@@ -40,7 +39,7 @@ namespace Oblig5_O1
             String input = txtAutentifisere.Text;
             bool Autentifisert = false;
             Autentifisert = bankhandlinger.Autentifisere(input);
-            if (Autentifisert = true) //Skift tilbake til == når koding er ferdig, ment for å komme seg fortere gjennom
+            if (Autentifisert == true) //Skift tilbake til == når koding er ferdig, ment for å komme seg fortere gjennom
             {
                 btnSettInnPenger.Show();
                 btnTaUtPenger.Show();
@@ -107,7 +106,7 @@ namespace Oblig5_O1
                 bankhandlinger.SettInPenger(beløp);
                 txtSet.Clear();
             }
-            catch (Exception ex)
+            catch
             {
                 string feilmelding = "Feilmelding #C3";
                 string message = "Du har skrevet inn noe som ikke er et tall, prøv igjen";
@@ -130,8 +129,8 @@ namespace Oblig5_O1
                 }
                 else if (bankhandlinger.TaUtPenger(beløp) == true)
                 {
-                    MessageBox.Show("Uttak er gyldig " + Convert.ToString(beløp) + " NOK sendes ut");
-                    bankhandlinger.SaldoUpdate = bankhandlinger.SaldoUpdate - beløp;
+                    MessageBox.Show("Uttak er gyldig " + Convert.ToString(beløp) + " NOK sendes ut", "Uttak");
+                    bankhandlinger.SaldoUpdate = bankhandlinger.Saldo() - beløp;
                 }
 
                 else
@@ -140,7 +139,7 @@ namespace Oblig5_O1
                 }
                 txtGet.Clear();
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Input av beløp er ugyldig, prøv igjen ", "Feilmelding #C3");
             }

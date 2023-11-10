@@ -10,6 +10,7 @@ namespace Oblig5_O1
     internal class Banken : IBankOperasjon
     {
         private double saldo;
+        Kunde Innlogging = new Kunde();
 
         public void LoggeUt()
         {
@@ -26,7 +27,7 @@ namespace Oblig5_O1
         public bool Autentifisere(String bruker)
         {
             bool svar = false;
-            if (bruker == "Pablo Escobar")
+            if (bruker == Innlogging.Kundenavn())
             {
                 svar = true;
             }
@@ -39,7 +40,7 @@ namespace Oblig5_O1
 
         public void SettInPenger(double beløp)
         {
-            if (beløp < 0)
+            if (beløp <= 0)
             {
                 MessageBox.Show("Beløpet du har oppgit er ugyldig, og vi kan ikkje gjennomføre dette inskuddet", "Feilmelding #C2");
             }
@@ -71,7 +72,7 @@ namespace Oblig5_O1
         public bool TaUtPenger(double beløp)
         {
             bool svar = false;
-            if(beløp < saldo)
+            if(beløp <= saldo)
             {
                 svar = true;
             }

@@ -46,6 +46,8 @@
             lbSaldo = new Label();
             lbBelopSet = new Label();
             lbBelopGet = new Label();
+            lbBelopInnskudd = new Label();
+            lbBelopUttak = new Label();
             SuspendLayout();
             // 
             // btnLoggUt
@@ -246,6 +248,30 @@
             lbBelopGet.TabIndex = 18;
             lbBelopGet.Text = "Hvor mye ønsker du og ta ut?";
             // 
+            // lbBelopInnskudd
+            // 
+            lbBelopInnskudd.AutoSize = true;
+            lbBelopInnskudd.BackColor = Color.Transparent;
+            lbBelopInnskudd.Font = new Font("Gill Sans Ultra Bold", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lbBelopInnskudd.ForeColor = Color.DarkRed;
+            lbBelopInnskudd.Location = new Point(514, 230);
+            lbBelopInnskudd.Name = "lbBelopInnskudd";
+            lbBelopInnskudd.Size = new Size(263, 26);
+            lbBelopInnskudd.TabIndex = 19;
+            lbBelopInnskudd.Text = "Skriv inn beløp I NOK";
+            // 
+            // lbBelopUttak
+            // 
+            lbBelopUttak.AutoSize = true;
+            lbBelopUttak.BackColor = Color.Transparent;
+            lbBelopUttak.Font = new Font("Gill Sans Ultra Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lbBelopUttak.ForeColor = Color.DarkRed;
+            lbBelopUttak.Location = new Point(514, 339);
+            lbBelopUttak.Name = "lbBelopUttak";
+            lbBelopUttak.Size = new Size(263, 26);
+            lbBelopUttak.TabIndex = 20;
+            lbBelopUttak.Text = "Skriv inn beløp I NOK";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -253,6 +279,8 @@
             BackColor = Color.Tan;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(797, 528);
+            Controls.Add(lbBelopUttak);
+            Controls.Add(lbBelopInnskudd);
             Controls.Add(lbBelopGet);
             Controls.Add(lbBelopSet);
             Controls.Add(lbSaldo);
@@ -295,5 +323,7 @@
         private Label lbSaldo;
         private Label lbBelopSet;
         private Label lbBelopGet;
+        private Label lbBelopInnskudd;
+        private Label lbBelopUttak;
     }
 }

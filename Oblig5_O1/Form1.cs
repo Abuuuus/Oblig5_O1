@@ -27,6 +27,8 @@ namespace Oblig5_O1
             lbSaldo.Hide();
             lbBelopSet.Hide();
             lbBelopGet.Hide();
+            lbBelopInnskudd.Hide();
+            lbBelopUttak.Hide();
             Saldo = rnd.Next(0, 100000);
             bankhandlinger.SaldoUpdate = Saldo;
 
@@ -71,6 +73,7 @@ namespace Oblig5_O1
             btnSet.Show();
             btnTilbake.Show();
             txtSet.Show();
+            lbBelopInnskudd.Show();
 
         }
 
@@ -151,6 +154,7 @@ namespace Oblig5_O1
             btnTilbake.Show();
             txtGet.Show();
             lbBelopGet.Show();
+            lbBelopUttak.Show();
         }
 
         private void btnSjekkSaldo_Click(object sender, EventArgs e)

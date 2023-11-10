@@ -111,12 +111,12 @@
             lbVelkommen.AutoSize = true;
             lbVelkommen.BackColor = Color.Transparent;
             lbVelkommen.Font = new Font("Algerian", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbVelkommen.ForeColor = SystemColors.GrayText;
-            lbVelkommen.Location = new Point(171, 9);
+            lbVelkommen.ForeColor = Color.DarkRed;
+            lbVelkommen.Location = new Point(112, 11);
             lbVelkommen.Name = "lbVelkommen";
-            lbVelkommen.Size = new Size(476, 39);
+            lbVelkommen.Size = new Size(593, 39);
             lbVelkommen.TabIndex = 7;
-            lbVelkommen.Text = "Velkommen til DNT bank";
+            lbVelkommen.Text = "Velkommen til Koldalen bank";
             // 
             // txtGet
             // 
@@ -203,6 +203,7 @@
             lbHandling.AutoSize = true;
             lbHandling.BackColor = Color.Transparent;
             lbHandling.Font = new Font("Gill Sans Ultra Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            lbHandling.ForeColor = Color.DarkRed;
             lbHandling.Location = new Point(272, 50);
             lbHandling.Name = "lbHandling";
             lbHandling.Size = new Size(263, 33);
@@ -214,6 +215,7 @@
             lbSaldo.AutoSize = true;
             lbSaldo.BackColor = Color.Transparent;
             lbSaldo.Font = new Font("Gill Sans Ultra Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lbSaldo.ForeColor = Color.DarkRed;
             lbSaldo.Location = new Point(199, 403);
             lbSaldo.Name = "lbSaldo";
             lbSaldo.Size = new Size(376, 26);
@@ -225,6 +227,7 @@
             lbBelopSet.AutoSize = true;
             lbBelopSet.BackColor = Color.Transparent;
             lbBelopSet.Font = new Font("Gill Sans Ultra Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lbBelopSet.ForeColor = Color.DarkRed;
             lbBelopSet.Location = new Point(171, 159);
             lbBelopSet.Name = "lbBelopSet";
             lbBelopSet.Size = new Size(404, 26);
@@ -236,6 +239,7 @@
             lbBelopGet.AutoSize = true;
             lbBelopGet.BackColor = Color.Transparent;
             lbBelopGet.Font = new Font("Gill Sans Ultra Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lbBelopGet.ForeColor = Color.DarkRed;
             lbBelopGet.Location = new Point(206, 272);
             lbBelopGet.Name = "lbBelopGet";
             lbBelopGet.Size = new Size(357, 26);

@@ -38,7 +38,7 @@ namespace Oblig5_O1
             String input = txtAutentifisere.Text;
             bool Autentifisert = false;
             Autentifisert = bankhandlinger.Autentifisere(input);
-            if (Autentifisert = true) //Skift tilbake til == når koding er ferdig, ment for å komme seg fortere gjennom
+            if (Autentifisert == true) //Skift tilbake til == når koding er ferdig, ment for å komme seg fortere gjennom
             {
                 btnSettInnPenger.Show();
                 btnTaUtPenger.Show();
@@ -121,7 +121,7 @@ namespace Oblig5_O1
                 if (beløp < 0)
                 {
                     MessageBox.Show("Du kan ikke ta ut negative verdier, prøv igjen");
-                   
+
                 }
                 else if (bankhandlinger.TaUtPenger(beløp) == true)
                 {

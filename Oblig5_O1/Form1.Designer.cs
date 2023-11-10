@@ -52,55 +52,73 @@
             // 
             // btnLoggUt
             // 
-            btnLoggUt.Font = new Font("Segoe UI", 22F, FontStyle.Regular, GraphicsUnit.Point);
-            btnLoggUt.Location = new Point(628, 85);
+            btnLoggUt.BackColor = Color.Transparent;
+            btnLoggUt.FlatAppearance.MouseDownBackColor = Color.White;
+            btnLoggUt.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnLoggUt.FlatStyle = FlatStyle.Flat;
+            btnLoggUt.Font = new Font("Stencil", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLoggUt.ForeColor = Color.Gold;
+            btnLoggUt.Location = new Point(628, 403);
             btnLoggUt.Margin = new Padding(3, 2, 3, 2);
             btnLoggUt.Name = "btnLoggUt";
             btnLoggUt.Size = new Size(157, 52);
             btnLoggUt.TabIndex = 1;
             btnLoggUt.Text = "Logg Ut";
-            btnLoggUt.UseVisualStyleBackColor = true;
+            btnLoggUt.UseVisualStyleBackColor = false;
             btnLoggUt.Click += btnLoggUt_Click;
             // 
             // btnGet
             // 
-            btnGet.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            btnGet.BackColor = Color.Transparent;
+            btnGet.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnGet.FlatStyle = FlatStyle.Flat;
+            btnGet.Font = new Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            btnGet.ForeColor = Color.Gold;
             btnGet.Location = new Point(122, 320);
             btnGet.Margin = new Padding(3, 2, 3, 2);
             btnGet.Name = "btnGet";
             btnGet.Size = new Size(120, 57);
             btnGet.TabIndex = 2;
-            btnGet.Text = "Get";
-            btnGet.UseVisualStyleBackColor = true;
+            btnGet.Text = "Ta Ut";
+            btnGet.UseVisualStyleBackColor = false;
             btnGet.Click += btnGet_Click;
             // 
             // btnSet
             // 
-            btnSet.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSet.BackColor = Color.Transparent;
+            btnSet.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnSet.FlatStyle = FlatStyle.Flat;
+            btnSet.Font = new Font("Stencil", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSet.ForeColor = Color.Gold;
             btnSet.Location = new Point(123, 208);
             btnSet.Margin = new Padding(3, 2, 3, 2);
             btnSet.Name = "btnSet";
             btnSet.Size = new Size(120, 62);
             btnSet.TabIndex = 3;
-            btnSet.Text = "Set";
-            btnSet.UseVisualStyleBackColor = true;
+            btnSet.Text = "Sett Inn";
+            btnSet.UseVisualStyleBackColor = false;
             btnSet.Click += btnSet_Click;
             // 
             // btnAutentifisere
             // 
-            btnAutentifisere.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAutentifisere.BackColor = Color.Transparent;
+            btnAutentifisere.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnAutentifisere.FlatStyle = FlatStyle.Flat;
+            btnAutentifisere.Font = new Font("Stencil", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAutentifisere.ForeColor = Color.Gold;
             btnAutentifisere.Location = new Point(112, 101);
             btnAutentifisere.Margin = new Padding(3, 2, 3, 2);
             btnAutentifisere.Name = "btnAutentifisere";
             btnAutentifisere.Size = new Size(124, 40);
             btnAutentifisere.TabIndex = 4;
             btnAutentifisere.Text = "Logg Inn";
-            btnAutentifisere.UseVisualStyleBackColor = true;
+            btnAutentifisere.UseVisualStyleBackColor = false;
             btnAutentifisere.Click += btnAutentifisere_Click;
             // 
             // txtAutentifisere
             // 
             txtAutentifisere.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            txtAutentifisere.ForeColor = SystemColors.WindowText;
             txtAutentifisere.Location = new Point(242, 101);
             txtAutentifisere.Margin = new Padding(3, 2, 3, 2);
             txtAutentifisere.Multiline = true;
@@ -112,11 +130,12 @@
             // 
             lbVelkommen.AutoSize = true;
             lbVelkommen.BackColor = Color.Transparent;
-            lbVelkommen.Font = new Font("Algerian", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbVelkommen.ForeColor = Color.DarkRed;
+            lbVelkommen.FlatStyle = FlatStyle.Flat;
+            lbVelkommen.Font = new Font("Broadway", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lbVelkommen.ForeColor = Color.Gold;
             lbVelkommen.Location = new Point(149, 11);
             lbVelkommen.Name = "lbVelkommen";
-            lbVelkommen.Size = new Size(488, 39);
+            lbVelkommen.Size = new Size(522, 40);
             lbVelkommen.TabIndex = 7;
             lbVelkommen.Text = "Velkommen til KKA bank";
             // 
@@ -152,21 +171,28 @@
             // 
             // btnSettInnPenger
             // 
-            btnSettInnPenger.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSettInnPenger.Location = new Point(12, 85);
+            btnSettInnPenger.BackColor = Color.Transparent;
+            btnSettInnPenger.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnSettInnPenger.FlatStyle = FlatStyle.Flat;
+            btnSettInnPenger.Font = new Font("Stencil", 12.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSettInnPenger.ForeColor = Color.Gold;
+            btnSettInnPenger.Location = new Point(12, 152);
             btnSettInnPenger.Margin = new Padding(3, 2, 3, 2);
             btnSettInnPenger.Name = "btnSettInnPenger";
             btnSettInnPenger.Size = new Size(164, 52);
             btnSettInnPenger.TabIndex = 11;
             btnSettInnPenger.Text = "Sett Inn Penger";
-            btnSettInnPenger.UseVisualStyleBackColor = true;
+            btnSettInnPenger.UseVisualStyleBackColor = false;
             btnSettInnPenger.Click += btnSettInnPenger_Click;
             // 
             // btnTaUtPenger
             // 
             btnTaUtPenger.BackColor = Color.Transparent;
-            btnTaUtPenger.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            btnTaUtPenger.Location = new Point(224, 85);
+            btnTaUtPenger.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnTaUtPenger.FlatStyle = FlatStyle.Flat;
+            btnTaUtPenger.Font = new Font("Stencil", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnTaUtPenger.ForeColor = Color.Gold;
+            btnTaUtPenger.Location = new Point(12, 403);
             btnTaUtPenger.Margin = new Padding(3, 2, 3, 2);
             btnTaUtPenger.Name = "btnTaUtPenger";
             btnTaUtPenger.Size = new Size(157, 52);
@@ -178,8 +204,11 @@
             // btnSjekkSaldo
             // 
             btnSjekkSaldo.BackColor = Color.Transparent;
-            btnSjekkSaldo.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSjekkSaldo.Location = new Point(437, 83);
+            btnSjekkSaldo.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnSjekkSaldo.FlatStyle = FlatStyle.Flat;
+            btnSjekkSaldo.Font = new Font("Stencil", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSjekkSaldo.ForeColor = Color.Gold;
+            btnSjekkSaldo.Location = new Point(628, 152);
             btnSjekkSaldo.Margin = new Padding(3, 2, 3, 2);
             btnSjekkSaldo.Name = "btnSjekkSaldo";
             btnSjekkSaldo.Size = new Size(157, 52);
@@ -190,22 +219,26 @@
             // 
             // btnTilbake
             // 
-            btnTilbake.Font = new Font("Segoe UI", 22F, FontStyle.Regular, GraphicsUnit.Point);
-            btnTilbake.Location = new Point(628, 472);
+            btnTilbake.BackColor = Color.Transparent;
+            btnTilbake.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnTilbake.FlatStyle = FlatStyle.Flat;
+            btnTilbake.Font = new Font("Stencil", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnTilbake.ForeColor = Color.Gold;
+            btnTilbake.Location = new Point(628, 474);
             btnTilbake.Margin = new Padding(3, 2, 3, 2);
             btnTilbake.Name = "btnTilbake";
-            btnTilbake.Size = new Size(169, 54);
+            btnTilbake.Size = new Size(157, 43);
             btnTilbake.TabIndex = 14;
             btnTilbake.Text = "Tilbake";
-            btnTilbake.UseVisualStyleBackColor = true;
+            btnTilbake.UseVisualStyleBackColor = false;
             btnTilbake.Click += btnTilbake_Click;
             // 
             // lbHandling
             // 
             lbHandling.AutoSize = true;
-            lbHandling.BackColor = Color.Transparent;
+            lbHandling.BackColor = Color.LightGray;
             lbHandling.Font = new Font("Gill Sans Ultra Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            lbHandling.ForeColor = Color.DarkRed;
+            lbHandling.ForeColor = Color.Gold;
             lbHandling.Location = new Point(272, 50);
             lbHandling.Name = "lbHandling";
             lbHandling.Size = new Size(263, 33);
@@ -215,9 +248,9 @@
             // lbSaldo
             // 
             lbSaldo.AutoSize = true;
-            lbSaldo.BackColor = Color.Transparent;
+            lbSaldo.BackColor = Color.LightGray;
             lbSaldo.Font = new Font("Gill Sans Ultra Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lbSaldo.ForeColor = Color.DarkRed;
+            lbSaldo.ForeColor = Color.Gold;
             lbSaldo.Location = new Point(199, 403);
             lbSaldo.Name = "lbSaldo";
             lbSaldo.Size = new Size(376, 26);
@@ -227,9 +260,9 @@
             // lbBelopSet
             // 
             lbBelopSet.AutoSize = true;
-            lbBelopSet.BackColor = Color.Transparent;
+            lbBelopSet.BackColor = Color.LightGray;
             lbBelopSet.Font = new Font("Gill Sans Ultra Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lbBelopSet.ForeColor = Color.DarkRed;
+            lbBelopSet.ForeColor = Color.Gold;
             lbBelopSet.Location = new Point(171, 159);
             lbBelopSet.Name = "lbBelopSet";
             lbBelopSet.Size = new Size(404, 26);
@@ -239,10 +272,11 @@
             // lbBelopGet
             // 
             lbBelopGet.AutoSize = true;
-            lbBelopGet.BackColor = Color.Transparent;
+            lbBelopGet.BackColor = Color.LightGray;
+            lbBelopGet.FlatStyle = FlatStyle.Flat;
             lbBelopGet.Font = new Font("Gill Sans Ultra Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lbBelopGet.ForeColor = Color.DarkRed;
-            lbBelopGet.Location = new Point(206, 272);
+            lbBelopGet.ForeColor = Color.Gold;
+            lbBelopGet.Location = new Point(199, 283);
             lbBelopGet.Name = "lbBelopGet";
             lbBelopGet.Size = new Size(357, 26);
             lbBelopGet.TabIndex = 18;
@@ -251,9 +285,9 @@
             // lbBelopInnskudd
             // 
             lbBelopInnskudd.AutoSize = true;
-            lbBelopInnskudd.BackColor = Color.Transparent;
+            lbBelopInnskudd.BackColor = Color.LightGray;
             lbBelopInnskudd.Font = new Font("Gill Sans Ultra Bold", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            lbBelopInnskudd.ForeColor = Color.DarkRed;
+            lbBelopInnskudd.ForeColor = Color.Gold;
             lbBelopInnskudd.Location = new Point(514, 230);
             lbBelopInnskudd.Name = "lbBelopInnskudd";
             lbBelopInnskudd.Size = new Size(263, 26);
@@ -263,9 +297,9 @@
             // lbBelopUttak
             // 
             lbBelopUttak.AutoSize = true;
-            lbBelopUttak.BackColor = Color.Transparent;
+            lbBelopUttak.BackColor = Color.LightGray;
             lbBelopUttak.Font = new Font("Gill Sans Ultra Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lbBelopUttak.ForeColor = Color.DarkRed;
+            lbBelopUttak.ForeColor = Color.Gold;
             lbBelopUttak.Location = new Point(514, 339);
             lbBelopUttak.Name = "lbBelopUttak";
             lbBelopUttak.Size = new Size(263, 26);
@@ -279,6 +313,7 @@
             BackColor = Color.Tan;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(797, 528);
+            Controls.Add(btnSettInnPenger);
             Controls.Add(lbBelopUttak);
             Controls.Add(lbBelopInnskudd);
             Controls.Add(lbBelopGet);
@@ -289,7 +324,6 @@
             Controls.Add(btnGet);
             Controls.Add(btnSjekkSaldo);
             Controls.Add(btnTaUtPenger);
-            Controls.Add(btnSettInnPenger);
             Controls.Add(txtSaldo);
             Controls.Add(txtSet);
             Controls.Add(txtGet);
@@ -300,6 +334,7 @@
             Controls.Add(btnLoggUt);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Banken";
             ResumeLayout(false);
             PerformLayout();

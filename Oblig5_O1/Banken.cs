@@ -13,7 +13,14 @@ namespace Oblig5_O1
 
         public void LoggeUt()
         {
-            Application.Exit();
+            string message = "Vil du logge ut av banken?";
+            string title = "Logg ut";
+            MessageBoxButtons button  =  MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, button);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         public bool Autentifisere(String bruker)
@@ -34,7 +41,7 @@ namespace Oblig5_O1
         {
             if (beløp < 0)
             {
-                MessageBox.Show("Beløpet du har oppgit er ugyldig, og vi kan ikkje gjennomføre dette inskuddet");
+                MessageBox.Show("Beløpet du har oppgit er ugyldig, og vi kan ikkje gjennomføre dette inskuddet", "Feilmelding #C2");
             }
             else
             {

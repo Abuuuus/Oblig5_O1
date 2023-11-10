@@ -40,7 +40,7 @@ namespace Oblig5_O1
             String input = txtAutentifisere.Text;
             bool Autentifisert = false;
             Autentifisert = bankhandlinger.Autentifisere(input);
-            if (Autentifisert == true) //Skift tilbake til == når koding er ferdig, ment for å komme seg fortere gjennom
+            if (Autentifisert = true) //Skift tilbake til == når koding er ferdig, ment for å komme seg fortere gjennom
             {
                 btnSettInnPenger.Show();
                 btnTaUtPenger.Show();
@@ -53,15 +53,14 @@ namespace Oblig5_O1
             else
             {
                 txtAutentifisere.Clear();
-                MessageBox.Show("Feil bruker, prøv igjen");
+                MessageBox.Show("Feil bruker, prøv igjen", "Feilmelding #C1");
             }
 
         }
 
         private void btnLoggUt_Click(object sender, EventArgs e)
         {
-            Banken Loggut = new Banken();
-            Loggut.LoggeUt();
+            bankhandlinger.LoggeUt();
         }
 
         private void btnSettInnPenger_Click(object sender, EventArgs e)
@@ -73,6 +72,7 @@ namespace Oblig5_O1
             btnSet.Show();
             btnTilbake.Show();
             txtSet.Show();
+            lbBelopSet.Show();
             lbBelopInnskudd.Show();
 
         }
@@ -109,7 +109,9 @@ namespace Oblig5_O1
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Input av beløp er ugyldig, prøv igjen " + ex.Message);
+                string feilmelding = "Feilmelding #C3";
+                string message = "Du har skrevet inn noe som ikke er et tall, prøv igjen";
+                MessageBox.Show(message, feilmelding);
                 txtSet.Clear();
             }
         }
@@ -123,7 +125,7 @@ namespace Oblig5_O1
 
                 if (beløp < 0)
                 {
-                    MessageBox.Show("Du kan ikke ta ut negative verdier, prøv igjen");
+                    MessageBox.Show("Du har valgt et negativt tall som ikke er mulig, prøv igjen", "Feilmelding #C2");
 
                 }
                 else if (bankhandlinger.TaUtPenger(beløp) == true)
@@ -134,13 +136,13 @@ namespace Oblig5_O1
 
                 else
                 {
-                    MessageBox.Show("Du har ikke dette beløpet på konto, og kan dermed ikke ta ut disse pengene. Om du fortsatt ønsker å ta ut penger vennligst sjekk saldo og ta ut et beløp som du har");
+                    MessageBox.Show("Du har ikke dette beløpet på konto, og kan dermed ikke ta ut disse pengene. Om du fortsatt ønsker å ta ut penger vennligst sjekk saldo og ta ut et beløp som du har", "Feilmelding #C4");
                 }
                 txtGet.Clear();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Input av beløp er ugyldig, prøv igjen " + ex.Message);
+                MessageBox.Show("Input av beløp er ugyldig, prøv igjen ", "Feilmelding #C3");
             }
         }
 

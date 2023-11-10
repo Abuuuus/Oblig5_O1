@@ -112,11 +112,11 @@
             lbVelkommen.BackColor = Color.Transparent;
             lbVelkommen.Font = new Font("Algerian", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
             lbVelkommen.ForeColor = Color.DarkRed;
-            lbVelkommen.Location = new Point(112, 11);
+            lbVelkommen.Location = new Point(149, 11);
             lbVelkommen.Name = "lbVelkommen";
-            lbVelkommen.Size = new Size(593, 39);
+            lbVelkommen.Size = new Size(488, 39);
             lbVelkommen.TabIndex = 7;
-            lbVelkommen.Text = "Velkommen til Koldalen bank";
+            lbVelkommen.Text = "Velkommen til KKA bank";
             // 
             // txtGet
             // 

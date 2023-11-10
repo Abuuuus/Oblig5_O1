@@ -133,11 +133,11 @@
             lbVelkommen.FlatStyle = FlatStyle.Flat;
             lbVelkommen.Font = new Font("Broadway", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
             lbVelkommen.ForeColor = Color.Gold;
-            lbVelkommen.Location = new Point(149, 11);
+            lbVelkommen.Location = new Point(123, 9);
             lbVelkommen.Name = "lbVelkommen";
-            lbVelkommen.Size = new Size(522, 40);
+            lbVelkommen.Size = new Size(570, 40);
             lbVelkommen.TabIndex = 7;
-            lbVelkommen.Text = "Velkommen til KKA bank";
+            lbVelkommen.Text = "Velkommen til Koldal bank";
             // 
             // txtGet
             // 

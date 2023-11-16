@@ -47,7 +47,7 @@ namespace Oblig5_O1
             btnLoggUt.Hide();
             lbBelopInnskudd.Hide();
             lbBelopUttak.Hide();
-            txtAutentifisere.PasswordChar = '*'; // Set to the character you want to use for masking
+            txtAutentifisere.PasswordChar = '*'; //Maskerer hva bruker skriver inn for å logge inn
             txtAutentifisere.Focus();
             Saldo = rnd.Next(0, 100000); //Lager et random tall for saldoen til kunden
             bankhandlinger.SaldoUpdate = Saldo; //Oppdaterer saldoen til kunden gjennom tilgangsmedlemmet

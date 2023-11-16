@@ -53,7 +53,7 @@
             // 
             btnLoggUt.BackColor = Color.Transparent;
             btnLoggUt.FlatAppearance.MouseDownBackColor = Color.White;
-            btnLoggUt.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnLoggUt.FlatAppearance.MouseOverBackColor = Color.Gray;
             btnLoggUt.FlatStyle = FlatStyle.Flat;
             btnLoggUt.Font = new Font("Stencil", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnLoggUt.ForeColor = Color.Gold;
@@ -69,7 +69,7 @@
             // btnGet
             // 
             btnGet.BackColor = Color.Transparent;
-            btnGet.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnGet.FlatAppearance.MouseOverBackColor = Color.Gray;
             btnGet.FlatStyle = FlatStyle.Flat;
             btnGet.Font = new Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point);
             btnGet.ForeColor = Color.Gold;
@@ -85,7 +85,7 @@
             // btnSet
             // 
             btnSet.BackColor = Color.Transparent;
-            btnSet.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnSet.FlatAppearance.MouseOverBackColor = Color.Gray;
             btnSet.FlatStyle = FlatStyle.Flat;
             btnSet.Font = new Font("Stencil", 14F, FontStyle.Regular, GraphicsUnit.Point);
             btnSet.ForeColor = Color.Gold;
@@ -101,7 +101,7 @@
             // btnAutentifisere
             // 
             btnAutentifisere.BackColor = Color.Transparent;
-            btnAutentifisere.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnAutentifisere.FlatAppearance.MouseOverBackColor = Color.Gray;
             btnAutentifisere.FlatStyle = FlatStyle.Flat;
             btnAutentifisere.Font = new Font("Stencil", 14F, FontStyle.Regular, GraphicsUnit.Point);
             btnAutentifisere.ForeColor = Color.Gold;
@@ -171,7 +171,7 @@
             // btnSettInnPenger
             // 
             btnSettInnPenger.BackColor = Color.Transparent;
-            btnSettInnPenger.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnSettInnPenger.FlatAppearance.MouseOverBackColor = Color.Gray;
             btnSettInnPenger.FlatStyle = FlatStyle.Flat;
             btnSettInnPenger.Font = new Font("Stencil", 12.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnSettInnPenger.ForeColor = Color.Gold;
@@ -187,7 +187,7 @@
             // btnTaUtPenger
             // 
             btnTaUtPenger.BackColor = Color.Transparent;
-            btnTaUtPenger.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnTaUtPenger.FlatAppearance.MouseOverBackColor = Color.Gray;
             btnTaUtPenger.FlatStyle = FlatStyle.Flat;
             btnTaUtPenger.Font = new Font("Stencil", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnTaUtPenger.ForeColor = Color.Gold;
@@ -203,7 +203,7 @@
             // btnSjekkSaldo
             // 
             btnSjekkSaldo.BackColor = Color.Transparent;
-            btnSjekkSaldo.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnSjekkSaldo.FlatAppearance.MouseOverBackColor = Color.Gray;
             btnSjekkSaldo.FlatStyle = FlatStyle.Flat;
             btnSjekkSaldo.Font = new Font("Stencil", 14F, FontStyle.Regular, GraphicsUnit.Point);
             btnSjekkSaldo.ForeColor = Color.Gold;
@@ -219,7 +219,7 @@
             // btnTilbake
             // 
             btnTilbake.BackColor = Color.Transparent;
-            btnTilbake.FlatAppearance.MouseOverBackColor = Color.Black;
+            btnTilbake.FlatAppearance.MouseOverBackColor = Color.Gray;
             btnTilbake.FlatStyle = FlatStyle.Flat;
             btnTilbake.Font = new Font("Stencil", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnTilbake.ForeColor = Color.Gold;

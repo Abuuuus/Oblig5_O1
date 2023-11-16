@@ -17,7 +17,7 @@ namespace Oblig5_O1
     //Både i klassen og hovedprogrammet er det lagt til failsafer slik at viss det blir skrevet inn et negativt tall eller en bokstav
     //istedet for et tall som er gyldig vil kunden bli opplyst om dette og blir bedt om å skrive det inn på nytt. På den måten kræsjer
     //ikke programmet men vil opplyse om hva kunden har gjort galt. 
-    
+
     public partial class Form1 : Form
     {
         Random rnd = new Random();

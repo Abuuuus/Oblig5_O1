@@ -6,6 +6,7 @@ namespace Oblig5_O1
     //Klasser som er implementert er Banken.cs og Kunde.cs. Kunde.cs holder på informasjonen til kunden i banken, og kun det. Den er bare ment
     //for å returnere kunden sin innlogging. Banken.cs har et par flere funksjoner derimot, den implementerer alle funksjoner som interface
     //IBankOperasjoner har som er: Loggeut, Tautpenger, Settinnpenger, Saldo, Saldoupdate og Autentifisere. 
+    //Banken.cs brukes for alle funksjonene som banken har som listet og brukes for å operere alle funksjonene banken har.
     //Autentifisere er klassen som sjekker om innlogging som kunde har skrevet inn matcher med systemet sin lagrede innlogging, og returnerer
     //en bool basert på om du har skrevet inn riktig innlogging eller ikke
     //Loggeut lar deg loggeut av systemet og er for å shutte ned programmet
@@ -25,6 +26,7 @@ namespace Oblig5_O1
         double beløp = 0;
         Banken bankhandlinger = new Banken();
 
+
         public Form1()
         {
             //I starten gjømmes alle knapper, labels og tekstbokser som ikke brukes før kunden har logget inn
@@ -39,12 +41,14 @@ namespace Oblig5_O1
             btnSettInnPenger.Hide();
             btnSjekkSaldo.Hide();
             btnTaUtPenger.Hide();
-            btnLoggUt.Hide();
             lbSaldo.Hide();
             lbBelopSet.Hide();
             lbBelopGet.Hide();
+            btnLoggUt.Hide();
             lbBelopInnskudd.Hide();
             lbBelopUttak.Hide();
+            txtAutentifisere.PasswordChar = '*'; // Set to the character you want to use for masking
+            txtAutentifisere.Focus();
             Saldo = rnd.Next(0, 100000); //Lager et random tall for saldoen til kunden
             bankhandlinger.SaldoUpdate = Saldo; //Oppdaterer saldoen til kunden gjennom tilgangsmedlemmet
 

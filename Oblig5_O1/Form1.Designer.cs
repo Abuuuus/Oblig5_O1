@@ -116,8 +116,9 @@
             // 
             // txtAutentifisere
             // 
+            txtAutentifisere.BackColor = SystemColors.Window;
             txtAutentifisere.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            txtAutentifisere.ForeColor = SystemColors.WindowText;
+            txtAutentifisere.ForeColor = SystemColors.ControlText;
             txtAutentifisere.Location = new Point(242, 101);
             txtAutentifisere.Margin = new Padding(3, 2, 3, 2);
             txtAutentifisere.Multiline = true;
@@ -175,7 +176,7 @@
             btnSettInnPenger.FlatStyle = FlatStyle.Flat;
             btnSettInnPenger.Font = new Font("Stencil", 12.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnSettInnPenger.ForeColor = Color.Gold;
-            btnSettInnPenger.Location = new Point(12, 152);
+            btnSettInnPenger.Location = new Point(12, 145);
             btnSettInnPenger.Margin = new Padding(3, 2, 3, 2);
             btnSettInnPenger.Name = "btnSettInnPenger";
             btnSettInnPenger.Size = new Size(164, 52);
@@ -191,7 +192,7 @@
             btnTaUtPenger.FlatStyle = FlatStyle.Flat;
             btnTaUtPenger.Font = new Font("Stencil", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnTaUtPenger.ForeColor = Color.Gold;
-            btnTaUtPenger.Location = new Point(12, 403);
+            btnTaUtPenger.Location = new Point(12, 390);
             btnTaUtPenger.Margin = new Padding(3, 2, 3, 2);
             btnTaUtPenger.Name = "btnTaUtPenger";
             btnTaUtPenger.Size = new Size(157, 52);
@@ -207,10 +208,10 @@
             btnSjekkSaldo.FlatStyle = FlatStyle.Flat;
             btnSjekkSaldo.Font = new Font("Stencil", 14F, FontStyle.Regular, GraphicsUnit.Point);
             btnSjekkSaldo.ForeColor = Color.Gold;
-            btnSjekkSaldo.Location = new Point(628, 152);
+            btnSjekkSaldo.Location = new Point(615, 159);
             btnSjekkSaldo.Margin = new Padding(3, 2, 3, 2);
             btnSjekkSaldo.Name = "btnSjekkSaldo";
-            btnSjekkSaldo.Size = new Size(157, 52);
+            btnSjekkSaldo.Size = new Size(170, 52);
             btnSjekkSaldo.TabIndex = 13;
             btnSjekkSaldo.Text = "Sjekke Saldo";
             btnSjekkSaldo.UseVisualStyleBackColor = false;
